@@ -40,8 +40,7 @@ workflows:
       - start-server
       - cypress/run:
           name: run-component-tests
-          install-command: npm run install
-          post-install: npm run build && npm run client:build
+          install-command: npm install
           cypress-command: npx cypress run --component
       # - deploy-to-render-staging:
       #     requires:
