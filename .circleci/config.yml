@@ -24,5 +24,3 @@ workflows:
           name: run-component-tests
           install-command: npm install
           cypress-command: npx cypress run --component
-          requires:
-            - start-server
